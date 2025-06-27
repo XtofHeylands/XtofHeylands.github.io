@@ -1,0 +1,51 @@
+.component-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.component-max-width {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.component-text1 {
+  font-size: 100px;
+  text-align: center;
+}
+ 
+.component-text2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+ 
+.component-fragment {
+  display: contents;
+}
+ 
+.component-text3 {
+  display: inline-block;
+}
+ 
+@media(max-width: 767px) {
+  .component-max-width {
+    align-items: center;
+    padding-left: var(--dl-layout-space-threeunits);
+    padding-right: var(--dl-layout-space-threeunits);
+  }
+}
+ 
+@media(max-width: 479px) {
+  .component-max-width {
+    padding-left: var(--dl-layout-space-oneandhalfunits);
+    padding-right: var(--dl-layout-space-oneandhalfunits);
+  }
+}
