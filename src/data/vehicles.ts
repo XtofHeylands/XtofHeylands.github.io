@@ -58,7 +58,7 @@ export const vehicles: Vehicle[] = [
         "Achterwielaandrijving",
         "Licht groen exterieur",
         "Groen interieur",
-        "Originele handleiding in Nederlands en Engels",
+        "Originele handleiding EN en NL",
       ],
       EN: [
         "Original 1.2L, 4-cylinder engine",
@@ -66,7 +66,7 @@ export const vehicles: Vehicle[] = [
         "Rear-wheel drive",
         "Light green exterior",
         "Green interior",
-        "Original owner's manual in Dutch and English",
+        "Original owner's manual EN and NL",
       ],
 
       FR: [
@@ -75,7 +75,7 @@ export const vehicles: Vehicle[] = [
         "Propulsion arrière",
         "Extérieur vert clair",
         "Intérieur vert",
-        "Manuel d'origine en néerlandais et en anglais",
+        "Manuel d'origine en EN et NL",
       ],
 
       DE: [
@@ -84,7 +84,7 @@ export const vehicles: Vehicle[] = [
         "Hinterradantrieb",
         "Hellgrünes Exterieur",
         "Grünes Interieur",
-        "Originales Handbuch auf Niederländisch und Englisch",
+        "Originales Handbuch auf EN und NL",
       ],
     },
     description: {
