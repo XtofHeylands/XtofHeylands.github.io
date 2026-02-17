@@ -60,10 +60,10 @@ export const translations = {
   services: {
     title: { NL: "Diensten", EN: "Services", FR: "Services", DE: "Dienstleistungen" },
     subtitle: {
-      NL: "Professionele zorg voor uw klassieke automobiel",
-      EN: "Professional care for your classic automobile",
-      FR: "Soins professionnels pour votre automobile classique",
-      DE: "Professionelle Pflege für Ihren Oldtimer",
+      NL: "Professionele zorg voor uw klassieke automobiel.",
+      EN: "Professional care for your classic automobile.",
+      FR: "Soins professionnels pour votre automobile classique.",
+      DE: "Professionelle Pflege für Ihren Oldtimer.",
     },
     maintenance: { NL: "Onderhoud", EN: "Maintenance", FR: "Entretien", DE: "Wartung" },
     maintenanceDesc: {
@@ -74,10 +74,10 @@ export const translations = {
     },
     storage: { NL: "Stalling", EN: "Storage", FR: "Stockage", DE: "Lagerung" },
     storageDesc: {
-      NL: "Droge (winter)stalling met extra services zoals geplande ritten, accu-onderhoud en detailing.",
-      EN: "Dry (winter) storage with additional services such as scheduled drives, battery upkeep and detailing.",
-      FR: "Stockage sec (hiver) avec services supplémentaires comme sorties programmées, entretien batterie et detailing.",
-      DE: "Trockene (Winter-)Lagerung mit zusätzlichen Services wie geplante Fahrten, Batteriepflege und Detailing.",
+      NL: "Droge stalling met extra services zoals geplande ritten, accu-onderhoud en detailing.",
+      EN: "Dry storage with additional services such as scheduled drives, battery upkeep and detailing.",
+      FR: "Stockage sec avec services supplémentaires comme sorties programmées, entretien batterie et detailing.",
+      DE: "Trockene Lagerung mit zusätzlichen Services wie geplante Fahrten, Batteriepflege und Detailing.",
     },
     transport: { NL: "Transport", EN: "Transport", FR: "Transport", DE: "Transport" },
     transportDesc: {
@@ -99,10 +99,10 @@ export const translations = {
   sales: {
     title: { NL: "Verkoop", EN: "Sales", FR: "Ventes", DE: "Verkauf" },
     subtitle: {
-      NL: "Zorgvuldig geselecteerde collectie klassieke automobielen",
-      EN: "Curated selection of classic automobiles",
-      FR: "Sélection soignée d'automobiles classiques",
-      DE: "Kuratierte Auswahl an klassischen Automobilen",
+      NL: "Zorgvuldig geselecteerde collectie klassieke automobielen.",
+      EN: "Curated selection of classic automobiles.",
+      FR: "Sélection soignée d'automobiles classiques.",
+      DE: "Kuratierte Auswahl an klassischen Automobilen.",
     },
     backToSales: { NL: "Terug naar Verkoop", EN: "Back to Sales", FR: "Retour aux Ventes", DE: "Zurück zum Verkauf" },
     vehicleNotFound: { NL: "Voertuig niet gevonden", EN: "Vehicle not found", FR: "Véhicule non trouvé", DE: "Fahrzeug nicht gefunden" },
@@ -221,6 +221,7 @@ export const translations = {
     },
     sendMessage: { NL: "Verstuur Bericht", EN: "Send Message", FR: "Envoyer le Message", DE: "Nachricht Senden" },
     location: { NL: "Locatie", EN: "Location", FR: "Emplacement", DE: "Standort" },
+    area: { NL: "België, Limburg", EN: "Belgium, Limburg", FR: "Belgique, Limbourg", DE: "Belgien, Limburg"}
   },
 
   // Footer

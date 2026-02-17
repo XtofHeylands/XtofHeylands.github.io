@@ -71,7 +71,7 @@ const Contact = () => {
                 <Label htmlFor="firstName">{t("contact", "firstName")}</Label>
                 <Input 
                   id="firstName" 
-                  placeholder="John" 
+                  placeholder="Erwin" 
                   value={formData.firstName}
                   onChange={handleChange}
                 />
@@ -80,7 +80,7 @@ const Contact = () => {
                 <Label htmlFor="lastName">{t("contact", "lastName")}</Label>
                 <Input 
                   id="lastName" 
-                  placeholder="Doe" 
+                  placeholder="Komenda" 
                   value={formData.lastName}
                   onChange={handleChange}
                 />
@@ -92,7 +92,7 @@ const Contact = () => {
               <Input 
                 id="email" 
                 type="email" 
-                placeholder="john@example.com" 
+                placeholder="Erwin.Komenda@example.com" 
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -128,7 +128,7 @@ const Contact = () => {
             <div>
               <h3 className="font-semibold mb-2">{t("contact", "location")}</h3>
               <p className="text-muted-foreground">
-                Belgium, Limburg
+                {t("contact", "area")}
               </p>
             </div>
             <div>
