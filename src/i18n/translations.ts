@@ -74,10 +74,10 @@ export const translations = {
     },
     storage: { NL: "Stalling", EN: "Storage", FR: "Stockage", DE: "Lagerung" },
     storageDesc: {
-      NL: "Droge en beveiligde stalling met extra services zoals geplande ritten, accu-onderhoud en detailing.",
-      EN: "Dry and secured storage with additional services such as scheduled drives, battery upkeep and detailing.",
-      FR: "Stockage sec sécurisé avec services supplémentaires comme sorties programmées, entretien batterie et detailing.",
-      DE: "Trockene und gesicherte lagerung mit zusätzlichen Services wie geplante Fahrten, Batteriepflege und Detailing.",
+      NL: "Droge en beveiligde stalling met optionele extras zoals aansluiten druppellader, periodisch warm laten draaien, geplande ritten en reinigen van zowel interieur als exterieur.",
+      EN: "Dry and secured storage with optional extras such as connecting a trickle charger, periodically running the engine, scheduled drives and cleaning of both interior and exterior.",
+      FR: "Stockage sec et sécurisé avec extras optionnels tels que connexion d'un chargeur de maintien, mise en marche périodique du moteur, sorties programmées et nettoyage de l'intérieur comme de l'extérieur.",
+      DE: "Trockene und gesicherte Lagerung mit optionalen Extras wie Anschluss eines Erhaltungsladegeräts, periodisches Warmlaufen, geplante Fahrten und Reinigung von Innen- und Außenbereich.",
     },
     transport: { NL: "Transport", EN: "Transport", FR: "Transport", DE: "Transport" },
     transportDesc: {

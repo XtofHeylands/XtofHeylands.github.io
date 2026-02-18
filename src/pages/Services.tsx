@@ -12,14 +12,14 @@ const Services = () => {
       description: t("services", "maintenanceDesc"),
     },
     {
-      icon: Warehouse,
-      title: t("services", "storage"),
-      description: t("services", "storageDesc"),
-    },
-    {
       icon: Car,
       title: t("services", "transport"),
       description: t("services", "transportDesc"),
+    },
+    {
+      icon: Warehouse,
+      title: t("services", "storage"),
+      description: t("services", "storageDesc"),
     },
     {
       icon: Hammer,
