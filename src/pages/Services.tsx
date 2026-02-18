@@ -38,11 +38,11 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="p-8 border border-border rounded-lg hover:border-foreground transition-colors group"
+              className="h-full p-8 border border-border rounded-lg hover:border-foreground transition-colors group"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <service.icon className="h-10 w-10 mb-4 text-muted-foreground group-hover:text-foreground transition-colors" />
