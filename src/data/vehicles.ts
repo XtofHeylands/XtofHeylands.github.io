@@ -28,6 +28,7 @@ export interface Vehicle {
   year: number;
   mileage: string;
   price: number;
+  sold: boolean;
   images: string[];
   features: {
     NL: string[];
@@ -50,6 +51,7 @@ export const vehicles: Vehicle[] = [
     year: 1966,
     mileage: "8.630 km",
     price: 8900,
+    sold: true,
     images: cortinaImages,
     features: {
       NL: [

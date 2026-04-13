@@ -108,6 +108,7 @@ export const translations = {
     vehicleNotFound: { NL: "Voertuig niet gevonden", EN: "Vehicle not found", FR: "Véhicule non trouvé", DE: "Fahrzeug nicht gefunden" },
     description: { NL: "Beschrijving", EN: "Description", FR: "Description", DE: "Beschreibung" },
     features: { NL: "Kenmerken", EN: "Features", FR: "Caractéristiques", DE: "Ausstattung" },
+    sold: { NL: "Verkocht", EN: "Sold", FR: "Vendu", DE: "Verkauft" },
     inquireNow: { NL: "Informeer Nu", EN: "Inquire Now", FR: "Demander Maintenant", DE: "Jetzt Anfragen" },
     contactUs: { NL: "Contacteer Ons", EN: "Contact Us", FR: "Contactez-nous", DE: "Kontaktieren Sie uns" },
   },

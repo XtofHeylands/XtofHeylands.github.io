@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { Vehicle } from "@/data/vehicles";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 interface VehicleCardProps {
   vehicle: Vehicle;
 }
 
 export function VehicleCard({ vehicle }: VehicleCardProps) {
+  const { t } = useLanguage();
   return (
     <Link
       to={`/sales/${vehicle.id}`}
@@ -14,12 +16,18 @@ export function VehicleCard({ vehicle }: VehicleCardProps) {
       <div className="flex flex-col sm:flex-row">
         {/* Image */}
         <div className="sm:w-64 md:w-72 lg:w-80 flex-shrink-0">
-          <div className="aspect-[4/3] sm:aspect-auto sm:h-full">
+          <div className="relative aspect-[4/3] sm:aspect-auto sm:h-full">
             <img
               src={vehicle.images[0]}
               alt={vehicle.name}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
+
+            {vehicle.sold && (
+              <div className="absolute top-3 right-3 rounded-full bg-red-600 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white shadow-lg">
+                {t("sales", "sold")}
+              </div>
+            )}
           </div>
         </div>
 
@@ -36,9 +44,11 @@ export function VehicleCard({ vehicle }: VehicleCardProps) {
           </div>
 
           <div className="mt-4 sm:mt-6">
-            <span className="text-xl md:text-2xl font-bold">
-              € {vehicle.price.toLocaleString("nl-BE")}
-            </span>
+            {!vehicle.sold && (
+              <span className="text-xl md:text-2xl font-bold">
+                € {vehicle.price.toLocaleString("nl-BE")}
+              </span>
+            )}
           </div>
         </div>
       </div>

@@ -60,7 +60,13 @@ const VehicleDetail = () => {
                 alt={`${vehicle.name} - ${currentImageIndex + 1}`}
                 className="w-full h-full object-cover"
               />
-              
+
+              {vehicle.sold && (
+                <div className="absolute top-4 right-4 rounded-full bg-red-600 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white shadow-lg">
+                  {t("sales", "sold")}
+                </div>
+              )}
+
               {vehicle.images.length > 1 && (
                 <>
                   <button
@@ -121,9 +127,11 @@ const VehicleDetail = () => {
               </div>
             </div>
 
-            <div className="text-3xl md:text-4xl font-bold text-primary">
-              € {vehicle.price.toLocaleString("nl-BE")}
-            </div>
+            {!vehicle.sold && (
+              <div className="text-3xl md:text-4xl font-bold text-primary">
+                € {vehicle.price.toLocaleString("nl-BE")}
+              </div>
+            )}
 
             <div className="border-t border-border pt-6">
               <h2 className="text-xl font-semibold mb-4">{t("sales", "description")}</h2>
