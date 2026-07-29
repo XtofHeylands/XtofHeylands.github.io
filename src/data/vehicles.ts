@@ -21,7 +21,7 @@ function loadVehicleImages(folderName: string): string[] {
 
 // Load images for each vehicle folder - just specify the folder name
 const cortinaImages = loadVehicleImages("Ford_Cortina");
-const gallionImages = loadVehicleImages("Renault_Gallion");
+const galionImages = loadVehicleImages("Renault_Galion");
 
 export interface Vehicle {
   id: string;
@@ -98,47 +98,47 @@ export const vehicles: Vehicle[] = [
     },
   },
   {
-    id: "Renault Gallion",
-    name: "Renault Gallion R2167",
+    id: "Renault Galion",
+    name: "Renault Galion R2167",
     year: 1960,
     mileage: "20.320 km",
-    price: 12.500,
+    price: 12500,
     sold: false,
-    images: gallionImages,
+    images: galionImages,
     features: {
       NL: [
-        "2141cc 80pk, 4 cilinder benzinemotor",
+        "2141cc, 4 cilinder benzinemotor (80pk)",
         "4-versnellingen handgeschakeld",
-        "Achterwielaandrijving",
-        "Grijs exterieur, Beige interieur",
-        "Originele aankoopfactuur en onderhoudsboekje",
-        "Originele handleiding FR",
+        "2 zitplaatsen",
+        "Grijs/Beige interieur",
+        "Originele handleiding Frans",
+        "Gekeurd tot 05/05/2031"
       ],
       EN: [
-        "2141cc 80hp, 4-cylinder petrol engine",
+        "2141cc, 4-cylinder petrol engine (80hp)",
         "4-speed manual transmission",
-        "Rear-wheel drive",
-        "Grey exterior, Beige interior",
-        "Original purchase invoice and service booklet",
-        "Original owner's manual in FR",
+        "2 seats",
+        "Grey/Beige interior",
+        "Original owner's manual in French",
+        "MOT valid until 05/05/2031",
       ],
 
       FR: [
-        "Moteur essence 4 cylindres 2141cc 80ch",
+        "Moteur essence 4 cylindres 2141cc (80ch)",
         "Boîte manuelle à 4 vitesses",
-        "Propulsion arrière",
-        "Extérieur gris, intérieur beige",
-        "Facture d'achat et carnet d'entretien d'origine",
-        "Manuel d'origine en FR",
+        "2 places assises",
+        "Intérieur gris/beige",
+        "Manuel d'origine en français",
+        "Contrôle technique valable jusqu'au 05/05/2031",
       ],
 
       DE: [
-        "2141ccm 80PS 4-Zylinder-Benzinmotor",
+        "2141ccm 4-Zylinder-Benzinmotor (80PS)",
         "4-Gang-Schaltgetriebe",
-        "Hinterradantrieb",
-        "Graues Exterieur, Beiges Interieur",
-        "Originale Kaufrechnung und Serviceheft",
-        "Originales Handbuch auf FR",
+        "2 Sitzplätze",
+        "Grau/Beiges Interieur",
+        "Originales Handbuch auf Französisch",
+        "HU gültig bis 05/05/2031",
       ],
     },
     description: {
