@@ -21,6 +21,7 @@ function loadVehicleImages(folderName: string): string[] {
 
 // Load images for each vehicle folder - just specify the folder name
 const cortinaImages = loadVehicleImages("Ford_Cortina");
+const gallionImages = loadVehicleImages("Renault_Gallion");
 
 export interface Vehicle {
   id: string;
@@ -94,6 +95,57 @@ export const vehicles: Vehicle[] = [
       EN: "The car starts, drives, brakes, and shifts very well. Mechanical and electrical condition is OK. Chassis is in very good condition. Bodywork is also in good condition (original paint with light signs of use). Interior is in very good condition. Overall, a very well-maintained car. Extremely rare version.",
       FR: "La voiture démarre, roule, freine et passe les vitesses très bien. L'état mécanique et électrique est correct. Le châssis est en très bon état. La carrosserie est également en bon état (peinture d'origine avec de légères traces d'utilisation). L'intérieur est en très bon état. Dans l'ensemble, voiture très bien entretenue. Version extrêmement rare.",
       DE: "Das Fahrzeug startet, fährt, bremst und schaltet sehr gut. Mechanischer und elektrischer Zustand in Ordnung. Das Fahrgestell ist in sehr gutem Zustand. Die Karosserie ist ebenfalls in gutem Zustand (Originallack mit leichten Gebrauchsspuren). Der Innenraum ist in sehr gutem Zustand. Insgesamt ein sehr gut gepflegtes Fahrzeug. Äußerst seltene Ausführung.",
+    },
+  },
+  {
+    id: "Renault Gallion",
+    name: "Renault Gallion R2167",
+    year: 1960,
+    mileage: "20.320 km",
+    price: 12.500,
+    sold: false,
+    images: gallionImages,
+    features: {
+      NL: [
+        "2141cc 80pk, 4 cilinder benzinemotor",
+        "4-versnellingen handgeschakeld",
+        "Achterwielaandrijving",
+        "Grijs exterieur, Beige interieur",
+        "Originele aankoopfactuur en onderhoudsboekje",
+        "Originele handleiding FR",
+      ],
+      EN: [
+        "2141cc 80hp, 4-cylinder petrol engine",
+        "4-speed manual transmission",
+        "Rear-wheel drive",
+        "Grey exterior, Beige interior",
+        "Original purchase invoice and service booklet",
+        "Original owner's manual in FR",
+      ],
+
+      FR: [
+        "Moteur essence 4 cylindres 2141cc 80ch",
+        "Boîte manuelle à 4 vitesses",
+        "Propulsion arrière",
+        "Extérieur gris, intérieur beige",
+        "Facture d'achat et carnet d'entretien d'origine",
+        "Manuel d'origine en FR",
+      ],
+
+      DE: [
+        "2141ccm 80PS 4-Zylinder-Benzinmotor",
+        "4-Gang-Schaltgetriebe",
+        "Hinterradantrieb",
+        "Graues Exterieur, Beiges Interieur",
+        "Originale Kaufrechnung und Serviceheft",
+        "Originales Handbuch auf FR",
+      ],
+    },
+    description: {
+      NL: "Renault Galion type R2167 van 1960 te koop. Volledig origineel voertuig uit Frankrijk. Kleine vrachtwagen met totaalgewicht 4.9 ton, leeggewicht 2.1 ton, laadvermogen 2.8 ton. Start, rijdt, remt en schakelt zeer goed. Mechanische en elektrische toestand volledig ok. Chassis in perfecte staat. Carrosserie in perfecte staat (originele lak met lichte gebruikssporen). Interieur in zeer goede staat. Perfect onderhouden. Uiterst zeldzame oldtimer.",
+      EN: "1960 Renault Galion type R2167 for sale. Fully original vehicle from France. Small truck with a gross weight of 4.9 tonnes, kerb weight 2.1 tonnes, payload 2.8 tonnes. Starts, drives, brakes, and shifts very well. Mechanical and electrical condition fully OK. Chassis in perfect condition. Bodywork in perfect condition (original paint with light signs of use). Interior in very good condition. Perfectly maintained. Extremely rare classic vehicle.",
+      FR: "Renault Galion type R2167 de 1960 à vendre. Véhicule entièrement d'origine, provenant de France. Petit camion avec un poids total de 4,9 tonnes, poids à vide de 2,1 tonnes, charge utile de 2,8 tonnes. Démarre, roule, freine et passe les vitesses très bien. État mécanique et électrique parfaitement correct. Châssis en parfait état. Carrosserie en parfait état (peinture d'origine avec de légères traces d'utilisation). Intérieur en très bon état. Parfaitement entretenu. Véhicule de collection extrêmement rare.",
+      DE: "Renault Galion Typ R2167 von 1960 zu verkaufen. Vollständig originales Fahrzeug aus Frankreich. Kleiner Lastwagen mit einem Gesamtgewicht von 4,9 Tonnen, Leergewicht 2,1 Tonnen, Nutzlast 2,8 Tonnen. Startet, fährt, bremst und schaltet sehr gut. Mechanischer und elektrischer Zustand vollständig in Ordnung. Fahrgestell in perfektem Zustand. Karosserie in perfektem Zustand (Originallack mit leichten Gebrauchsspuren). Innenraum in sehr gutem Zustand. Perfekt gepflegt. Äußerst seltenes Oldtimer-Fahrzeug.",
     },
   },
 ];
