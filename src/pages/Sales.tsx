@@ -17,7 +17,7 @@ const Sales = () => {
         </div>
 
         <div className="max-w-4xl mx-auto space-y-6">
-          {vehicles.map((vehicle) => (
+          {[...vehicles].sort((a, b) => Number(a.sold) - Number(b.sold)).map((vehicle) => (
             <VehicleCard key={vehicle.id} vehicle={vehicle} />
           ))}
         </div>

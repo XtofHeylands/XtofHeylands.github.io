@@ -149,12 +149,15 @@ const VehicleDetail = () => {
                 ))}
               </ul>
             </div>
-
+            
+            {!vehicle.sold && (
             <div className="border-t border-border pt-6">
               <Button asChild size="lg" className="w-full sm:w-auto">
                 <Link to="/contact">{t("sales", "inquireNow")}</Link>
               </Button>
             </div>
+            )}
+            
           </div>
         </div>
       </div>
