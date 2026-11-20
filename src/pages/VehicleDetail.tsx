@@ -128,8 +128,15 @@ const VehicleDetail = () => {
             </div>
 
             {!vehicle.sold && (
-              <div className="text-3xl md:text-4xl font-bold text-primary">
-                € {vehicle.price.toLocaleString("nl-BE")}
+              <div className="flex items-baseline gap-4">
+                <div className="text-3xl md:text-4xl font-bold text-primary">
+                  € {(vehicle.discountPrice ?? vehicle.price).toLocaleString("nl-BE")}
+                </div>
+                {vehicle.discountPrice !== undefined && (
+                  <div className="text-xl md:text-2xl text-muted-foreground line-through">
+                    € {vehicle.price.toLocaleString("nl-BE")}
+                  </div>
+                )}
               </div>
             )}
 

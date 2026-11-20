@@ -4,8 +4,16 @@ import stccLogo from "@/assets/stcc_logo.svg";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Facebook, href: "#", label: "Facebook" },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/stcc.be?bqrl=MWgwOWs3djIwYmR2eg%3D%3D&utm_source=qr",
+    label: "Instagram",
+  },
+  {
+    icon: Facebook,
+    href: "https://www.facebook.com/p/STCC-Sint-Truiden-Classic-Cars-61556413360514/",
+    label: "Facebook",
+  },
 ];
 
 export function Footer() {
@@ -86,6 +94,8 @@ export function Footer() {
               <a
                 key={social.label}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={social.label}
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >

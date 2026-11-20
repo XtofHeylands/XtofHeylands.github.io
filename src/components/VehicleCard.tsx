@@ -45,9 +45,16 @@ export function VehicleCard({ vehicle }: VehicleCardProps) {
 
           <div className="mt-4 sm:mt-6">
             {!vehicle.sold && (
-              <span className="text-xl md:text-2xl font-bold">
-                € {vehicle.price.toLocaleString("nl-BE")}
-              </span>
+              <div className="flex items-baseline gap-3">
+                <span className="text-xl md:text-2xl font-bold">
+                  € {(vehicle.discountPrice ?? vehicle.price).toLocaleString("nl-BE")}
+                </span>
+                {vehicle.discountPrice !== undefined && (
+                  <span className="text-sm md:text-base text-muted-foreground line-through">
+                    € {vehicle.price.toLocaleString("nl-BE")}
+                  </span>
+                )}
+              </div>
             )}
           </div>
         </div>

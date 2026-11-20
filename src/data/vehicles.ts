@@ -29,6 +29,7 @@ export interface Vehicle {
   year: number;
   mileage: string;
   price: number;
+  discountPrice?: number;
   sold: boolean;
   images: string[];
   features: {
@@ -103,6 +104,7 @@ export const vehicles: Vehicle[] = [
     year: 1960,
     mileage: "20.320 km",
     price: 12500,
+    discountPrice: 10500,
     sold: false,
     images: galionImages,
     features: {
